@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        * {
             padding: 0px;
             margin: 0px;
         }
+
         .container {
             display: flex;
             align-items: center;
@@ -50,9 +51,9 @@
             height: 570px;
             opacity: 0;
             animation: fadeIn 3s forwards;
-            transition: width 2s, height 4s;
+            transition: width 2s, height 2s;
             transform-origin: 50% 65%;
-            transition: transform 4s, filter 3s ease-in-out;
+            transition: transform 4s, filter 2s ease-in-out;
             filter: brightness(100%);
         }
 
@@ -82,24 +83,31 @@
             0% {
                 opacity: 0;
             }
+
             20% {
                 opacity: 0.2;
             }
+
             30% {
                 opacity: 0.3;
             }
+
             50% {
                 opacity: 0.5;
             }
+
             60% {
                 opacity: 0.6;
             }
+
             70% {
                 opacity: 0.7;
             }
+
             80% {
                 opacity: 0.8;
             }
+
             100% {
                 opacity: 1;
             }
@@ -130,7 +138,7 @@
                     img.classList.add('imgAnimate');
                     observer.disconnect();
                 }
-            }, { threshold: 0.5 }); // Adjust the threshold as needed
+            }, { threshold: 0.5 });
 
             observer.observe(slide);
             observer.observe(img);
@@ -139,3 +147,5 @@
 </body>
 
 </html>
+
+
